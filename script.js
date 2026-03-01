@@ -57,4 +57,4 @@ function showMedia(arr) {
 window.onload = function () {
   showMedia(mediaArray);
 };
-console.log(mediaArray);
+
