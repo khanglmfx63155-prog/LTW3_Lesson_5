@@ -41,7 +41,12 @@ let mediaArray = [
     "./media/codauaingo.mp3"
   ),
   new Song("Đom Đóm", "./asset/domdombg.jpg", 4, "./media/domdom.mp3"),
-  new Song("Đường tôi chở em về", "./asset/duongtoichoemvebg.jpg", 10, "./media/duongtoichoemve.mp3"),
+  new Song(
+    "Đường tôi chở em về",
+    "./asset/duongtoichoemvebg.jpg",
+    10,
+    "./media/duongtoichoemve.mp3"
+  ),
   new Song("Em Mây", "./asset/emmaybg.jpg", 10, "./media/emmay.mp3"),
 ];
 function showMedia(arr) {
@@ -51,10 +56,10 @@ function showMedia(arr) {
   for (let i = 0; i < arr.length; i++) {
     let item = arr[i].createItem();
     mediaLS.appendChild(item);
+    // mediaLS.innerHTML += item;
   }
 }
 
 window.onload = function () {
   showMedia(mediaArray);
 };
-
